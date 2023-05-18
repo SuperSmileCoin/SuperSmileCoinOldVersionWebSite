@@ -86,7 +86,9 @@ h1 span {
 .letter-a{
   font-size: 100px;
 }
-
+.letter-b {
+  font-size: 24px;
+}
 /* ******************** @Medias ******************** */
 
 @media (max-width: 769px) and (min-width: 577px) {
