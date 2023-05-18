@@ -1,0 +1,176 @@
+/* ************ Custom properties ************ */
+
+:root {
+  --white-color: #FFF;
+  --first-color: rgb(217, 0, 98);
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --first-beta-color: rgb(248, 58, 143);
+  --second-color: rgb(20, 25, 45);
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: rgb(80, 20, 100);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+  --four-color: #f7df1e;
+  --four-alpha-color: rgba(247, 222, 30, 0.85);
+  --five-color: #212529;
+  --five-alpha-color: rgba(34, 34, 34, 0.85);
+  --six-color: rgb(80, 158, 227);
+  --six-alpha-color: rgba(80, 158, 227, 0.75);
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
+/* ************ Reset Styles ************ */
+
+* {
+  overflow-x: hidden;
+}
+
+/* ************ Mis Estilos ************ */
+
+.text-mini{
+  font-size: 13px;
+}
+
+.buy-btn{
+  text-decoration: none;
+}
+
+/* ************ NavBar Burguer ************ */
+
+.navbar-toggler-icon{
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navbar-toggler-icon[aria-expanded=true] {
+  --bs-navbar-toggler-border-color: white;
+}
+.navbar-toggler-icon[aria-expanded=false] {
+  --bs-navbar-toggler-border-color: white;
+}
+
+.nav-link {
+  color: var(--white-color);
+}
+.nav-link:hover{
+  color: var(--six-color);
+}
+.nav-link[aria-expanded=true]{
+  color: var(--six-color);
+}
+.nav-link[aria-expanded=false] {
+  color: var(--white-color);
+}
+.nav-link[aria-expanded=false]:hover {
+  color: var(--six-color);
+}
+
+.logotipo {
+  height: 70px;
+  width: auto;
+}
+
+/* ******************** H1 index ******************** */
+
+.home-title{
+  background-color: var(--five-color);
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-y: hidden;
+}
+h1 span {
+  overflow-y: hidden;
+}
+
+.letter-a{
+  font-size: 80px;
+}
+
+/* ******************** @Medias ******************** */
+
+@media (max-width: 769px) and (min-width: 577px) {
+  .logotipo {
+    height: 70px;
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 376px) {
+  .logotipo {
+    height: 60px;
+    width: auto;
+  }
+}
+
+@media (max-width: 375px) and (min-width: 281px) {
+  .logotipo {
+    height: 50px;
+    width: auto;
+  }
+}
+
+@media (max-width: 280px) and (min-width: 219px) {
+  .logotipo {
+    height: 45px;
+    width: auto;
+  }
+}
+
+/* ******************** Animations ******************** */
+
+@keyframes slideUpFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.slide-up-fade-in {
+  animation: slideUpFadeIn 0.6s cubic-bezier(0.3, 0.7, 0.3, 1);
+  animation-fill-mode: backwards;
+}
+
+@keyframes zoomOutFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zoom-out-fade-in {
+  animation: zoomOutFadeIn 0.5s cubic-bezier(0.5, 0.7, 0.7, 1);
+  animation-fill-mode: backwards;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-5 {
+  animation-delay: 0.5s;
+}
+.delay-7 {
+  animation-delay: 0.7s;
+}
+.delay-12 {
+  animation-delay: 1.2s;
+}
+.delay-20 {
+  animation-delay: 2s;
+}
+.delay-25 {
+  animation-delay: 2.5s;
+}
+.delay-30 {
+  animation-delay: 3.3s;
+}
