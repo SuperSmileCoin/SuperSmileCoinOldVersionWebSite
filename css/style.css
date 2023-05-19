@@ -86,6 +86,32 @@ h1 span {
 .letter-a{
   font-size: 100px;
 }
+
+/* ************************* H2 ******************** */
+.second-title {
+    font-family: 'Raleway', sans-serif;
+      font-size: 50px;
+      text-align: center;
+      display: inline-block;
+      background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      shape-outside: circle(100%);
+      clip-path: circle(100%);
+      animation: reveal 2s ease-in-out forwards;
+  }
+
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 /* ******************** @Medias ******************** */
 
 @media (max-width: 769px) and (min-width: 577px) {
