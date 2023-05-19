@@ -95,6 +95,7 @@ h1 span {
       display: inline-block;
       background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
       -webkit-background-clip: text;
+      background-clip: 10 ;
       -webkit-text-fill-color: transparent;
       shape-outside: circle(100%);
       clip-path: circle(100%);
