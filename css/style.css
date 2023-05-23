@@ -28,7 +28,7 @@
 /* ************ Mis Estilos ************ */
 
 body {
-  background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+  background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #3cfc6c, #01a553, #00ccff);
 }
 
 .text-mini{
@@ -37,6 +37,10 @@ body {
 
 .buy-btn{
   text-decoration: none;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 /* ************ NavBar Burguer ************ */
@@ -177,4 +181,42 @@ h1 span {
 .delay-30 {
   animation-delay: 3.3s;
 }
+.delay-7 {
+  animation-delay: 7s;
+}
 
+/* ************ Seccion 2 ************ */
+
+.tokenomics {
+  border-radius: 10px;
+  border-style: dashed;
+  height: auto;
+  width: 60vw;
+}
+
+/* ************ Seccion 3 ************ */
+
+.roadmap {
+  border-radius: 10px;
+  border-style: dashed;
+  height: auto;
+  width: 60vw;
+}
+
+/* ************ Seccion 4 ************ */
+
+.how-to-buy {
+  border-radius: 10px;
+  border-style: dashed;
+  height: auto;
+  width: 60vw;
+}
+
+/* ************ Seccion 5 ************ */
+
+.private-sale-cost {
+  border-radius: 10px;
+  border-style: dashed;
+  height: auto;
+ width: 60vw;
+}
